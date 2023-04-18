@@ -2,7 +2,7 @@
 This is a simple Rock, Paper, Scissors game.
 
 
-""" Live demo
+### Live demo
 
 You can play the game directly in your browser here:
 
