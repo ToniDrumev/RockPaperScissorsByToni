@@ -1,4 +1,7 @@
 import random
+def pr_green(skk): print("\033[92m {}\033[00m" .format(skk))
+def pr_red(skk): print("\033[91m {}\033[00m" .format(skk))
+
 
 rock = "Rock"
 paper = "Paper"
@@ -45,11 +48,11 @@ while True:
         print("Draw")
     elif player_move == rock and computer_move == scissors or player_move == paper and computer_move == rock or \
             player_move == scissors and computer_move == paper:
-        print("You Win!")
+        pr_green("You Win!")
         player_score += 1
     elif player_move == rock and computer_move == paper or player_move == paper and computer_move == scissors or \
             player_move == scissors and computer_move == rock:
-        print("You Lose!")
+        pr_red("You Lose!")
         computer_score += 1
 
     choice = input("Do you want to [q]uit? ")
